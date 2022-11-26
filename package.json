@@ -1,6 +1,6 @@
 {
   "name": "@tim-w-james/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Opinionated ESLint rule set for React and TypeScript",
   "main": "index.js",
   "repository": {
