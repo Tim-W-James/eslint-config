@@ -1,0 +1,61 @@
+{
+  "name": "@tim-w-james/eslint-config",
+  "version": "1.0.0",
+  "description": "Opinionated eslint rule set for React and TypeScript :rocket:",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tim-W-James/eslint-react.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "react",
+    "typescript",
+    "storybook",
+    "prettier",
+    "jsx-ally",
+    "airbnb",
+    "sonarjs"
+  ],
+  "author": "Tim-W-James <38764646+Tim-W-James@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tim-W-James/eslint-react/issues"
+  },
+  "homepage": "https://github.com/Tim-W-James/eslint-react#readme",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">= 5",
+    "@typescript-eslint/parser": ">= 5",
+    "eslint": ">= 8.28.0",
+    "eslint-config-airbnb": ">= 19",
+    "eslint-config-airbnb-typescript": ">= 17",
+    "eslint-config-prettier": ">= 8",
+    "eslint-plugin-import": ">= 2",
+    "eslint-plugin-jsx-a11y": ">= 6",
+    "eslint-plugin-prefer-arrow-functions": ">= 3",
+    "eslint-plugin-prettier": ">= 4",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 4",
+    "eslint-plugin-sonarjs": ">= 0.16",
+    "eslint-plugin-storybook": ">= 0.6",
+    "typescript": ">= 4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prefer-arrow-functions": "^3.1.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "eslint-plugin-storybook": "^0.6.7",
+    "typescript": "^4.9.3"
+  }
+}
