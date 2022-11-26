@@ -5,23 +5,33 @@ and style rules.
 
 ## Install
 
-- `npm`
+### `npm`
 
-  ```sh
-  npx install-peerdeps --dev @tim-w-james/eslint-config
-  ```
+```sh
+npx install-peerdeps --dev @tim-w-james/eslint-config
+```
 
-- `yarn`
+### `yarn`
 
-  ```sh
-  npx install-peerdeps --yarn --dev @tim-w-james/eslint-config
-  ```
+```sh
+npx install-peerdeps --yarn --dev @tim-w-james/eslint-config
+```
 
-- `pnpm`
+### `pnpm`
 
-  ```sh
-  npx install-peerdeps --pnpm --dev @tim-w-james/eslint-config
-  ```
+```sh
+npx install-peerdeps --pnpm --dev @tim-w-james/eslint-config
+```
+
+## Usage
+
+Add to your `eslint` config:
+
+```js
+{
+  "extends": "@tim-w-james"
+}
+```
 
 ## Ecosystem
 
