@@ -1,7 +1,7 @@
 {
   "name": "@tim-w-james/eslint-config",
-  "version": "1.0.0",
-  "description": "Opinionated eslint rule set for React and TypeScript :rocket:",
+  "version": "1.0.1",
+  "description": "Opinionated ESLint rule set for React and TypeScript",
   "main": "index.js",
   "repository": {
     "type": "git",
