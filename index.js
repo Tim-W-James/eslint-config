@@ -32,7 +32,6 @@ module.exports = {
     "sonarjs",
     "jsx-a11y",
     "prettier",
-    "vitest",
     "prefer-arrow-functions",
   ],
   // Ignore files in root
