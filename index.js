@@ -117,6 +117,8 @@ module.exports = {
       "warn",
       {
         argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
       },
     ],
     "require-await": "warn",
