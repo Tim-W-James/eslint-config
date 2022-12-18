@@ -111,6 +111,7 @@ module.exports = {
     ],
     "require-unicode-regexp": "error",
     "@typescript-eslint/restrict-template-expressions": "error",
+    "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
     "@typescript-eslint/no-unnecessary-type-arguments": "warn",
     "@typescript-eslint/no-unnecessary-condition": "warn",
     "@typescript-eslint/no-unused-vars": [
