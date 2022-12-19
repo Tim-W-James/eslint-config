@@ -1,7 +1,7 @@
-# ESlint Config React TypeScript
+# ESLint Config React TypeScript
 
-Opinionated eslint rule set for React and TypeScript. Emphasis on auto-fixable
-and style rules.
+Opinionated ESLint rule set for React and TypeScript. Emphasis on auto-fixable
+rules that encourage consistency, safety and readability across your code base.
 
 ## Install
 
