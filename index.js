@@ -186,11 +186,6 @@ module.exports = {
     curly: "warn",
     "object-shorthand": "warn",
     "@typescript-eslint/consistent-type-assertions": "warn",
-    "capitalized-comments": [
-      "warn",
-      "always",
-      { ignoreConsecutiveComments: true, ignoreInlineComments: true },
-    ],
     "@typescript-eslint/padding-line-between-statements": [
       "warn",
       {
