@@ -199,8 +199,26 @@ module.exports = {
           "throw",
           "case",
           "default",
-          "break",
-          "export",
+        ],
+      },
+    ],
+    // Disable console.log to encourage more explicit logging
+    "no-console": [
+      "warn",
+      {
+        allow: [
+          "warn",
+          "error",
+          "info",
+          "dir",
+          "table",
+          "assert",
+          "count",
+          "time",
+          "timeLog",
+          "trace",
+          "groupCollapsed",
+          "groupEnd",
         ],
       },
     ],
