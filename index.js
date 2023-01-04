@@ -31,6 +31,7 @@ module.exports = {
     "@typescript-eslint",
     "sonarjs",
     "jsx-a11y",
+    "react-refresh",
     "prettier",
     "prefer-arrow-functions",
   ],
@@ -96,6 +97,7 @@ module.exports = {
     ],
   },
   rules: {
+    "no-alert": "error",
     "@typescript-eslint/no-unused-expressions": [
       "error",
       {
@@ -173,6 +175,17 @@ module.exports = {
         format: ["PascalCase"],
       },
     ],
+    "react-refresh/only-export-components": "warn",
+    "no-restricted-imports": "off",
+    "@typescript-eslint/no-restricted-imports": [
+      "warn",
+      {
+        name: "react-redux",
+        importNames: ["useSelector", "useDispatch"],
+        message:
+          "Use typed hooks `useAppDispatch` and `useAppSelector` instead.",
+      },
+    ],
     "max-len": [
       "warn",
       {
@@ -239,6 +252,9 @@ module.exports = {
     {
       // override for storybook
       files: ["*.{stories,story}.{ts,tsx}"],
+      rules: {
+        "@typescript-eslint/naming-convention": "off",
+      },
     },
   ],
 };
