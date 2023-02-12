@@ -97,6 +97,8 @@ module.exports = {
     ],
   },
   rules: {
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-non-null-assertion": "error",
     "no-alert": "error",
     "@typescript-eslint/no-unused-expressions": [
       "error",
@@ -114,6 +116,15 @@ module.exports = {
     "require-unicode-regexp": "error",
     "@typescript-eslint/restrict-template-expressions": "error",
     "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
+    "react/button-has-type": "error",
+    "react/no-children-prop": "error",
+    "react/no-danger-with-children": "error",
+    "react/jsx-no-bind": "error",
+    "prefer-template": "warn",
+    "react/jsx-no-useless-fragment": "warn",
+    "react/jsx-curly-brace-presence": "warn",
+    "react/display-name": "warn",
+    "no-implicit-coercion": "warn",
     "@typescript-eslint/no-unnecessary-type-arguments": "warn",
     "@typescript-eslint/no-unnecessary-condition": "warn",
     "@typescript-eslint/no-unused-vars": [
@@ -237,7 +248,6 @@ module.exports = {
     ],
     "padding-line-between-statements": "off",
     "@typescript-eslint/no-shadow": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/quotes": "off",
     "@typescript-eslint/comma-dangle": "off",
     "react/react-in-jsx-scope": "off",
