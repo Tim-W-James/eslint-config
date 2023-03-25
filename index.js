@@ -171,14 +171,17 @@ module.exports = {
         selector: "variable",
         // Need to allow PascalCase for React components
         format: ["PascalCase", "camelCase", "UPPER_CASE"],
+        leadingUnderscore: 'allow',
       },
       {
         selector: "parameter",
         format: ["camelCase"],
+        leadingUnderscore: 'allow',
       },
       {
         selector: "property",
         format: null,
+        leadingUnderscore: 'allow',
       },
       {
         selector: "typeLike",
