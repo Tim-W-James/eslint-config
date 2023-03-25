@@ -34,6 +34,7 @@ module.exports = {
     "react-refresh",
     "prettier",
     "prefer-arrow-functions",
+    "simple-import-sort",
   ],
   // Ignore files in root
   ignorePatterns: ["/*.*"],
@@ -99,6 +100,8 @@ module.exports = {
   rules: {
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-ts-expect-error": "error",
     "no-alert": "error",
     "@typescript-eslint/no-unused-expressions": [
       "error",
@@ -160,6 +163,7 @@ module.exports = {
       {
         selector: "default",
         format: ["camelCase"],
+        leadingUnderscore: 'allow',
       },
       {
         selector: "variable",
@@ -169,13 +173,6 @@ module.exports = {
       {
         selector: "parameter",
         format: ["camelCase"],
-        leadingUnderscore: "allow",
-      },
-      {
-        selector: "memberLike",
-        modifiers: ["private"],
-        format: ["camelCase"],
-        leadingUnderscore: "require",
       },
       {
         selector: "property",

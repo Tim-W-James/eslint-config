@@ -23,6 +23,8 @@ npx install-peerdeps --yarn --dev @tim-w-james/eslint-config
 npx install-peerdeps --pnpm --dev @tim-w-james/eslint-config
 ```
 
+Once installed, bump the minimum versions to the latest/desired versions.
+
 ## Usage
 
 Add to your `eslint` config:
