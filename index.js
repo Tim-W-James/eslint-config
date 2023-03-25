@@ -123,6 +123,8 @@ module.exports = {
     "react/no-children-prop": "error",
     "react/no-danger-with-children": "error",
     "react/jsx-no-bind": "error",
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
     "prefer-template": "warn",
     "react/jsx-no-useless-fragment": "warn",
     "react/jsx-curly-brace-presence": "warn",
