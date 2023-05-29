@@ -15,11 +15,11 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react/recommended",
     "plugin:import/recommended",
     "airbnb-typescript",
+    "plugin:@typescript-eslint/strict",
     "airbnb/hooks",
     "plugin:sonarjs/recommended",
     "plugin:jsx-a11y/recommended",
@@ -35,6 +35,7 @@ module.exports = {
     "prettier",
     "prefer-arrow-functions",
     "simple-import-sort",
+    "filename-rules",
   ],
   // Ignore files in root
   ignorePatterns: ["/*.*"],
@@ -99,9 +100,20 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "error",
     "@typescript-eslint/prefer-ts-expect-error": "error",
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-expect-error": "allow-with-description",
+        "ts-ignore": true,
+        "ts-nocheck": true,
+        "ts-check": false,
+        minimumDescriptionLength: 3,
+      },
+    ],
     "no-alert": "error",
     "@typescript-eslint/no-unused-expressions": [
       "error",
@@ -122,7 +134,12 @@ module.exports = {
     "react/button-has-type": "error",
     "react/no-children-prop": "error",
     "react/no-danger-with-children": "error",
-    "react/jsx-no-bind": "error",
+    "react/no-unstable-nested-components": ["error", { allowAsProps: true }],
+    "react/jsx-fragments": "error",
+    "react/destructuring-assignment": [
+      "error",
+      { destructureInSignature: "always" },
+    ],
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
     "prefer-template": "warn",
@@ -165,23 +182,23 @@ module.exports = {
       {
         selector: "default",
         format: ["camelCase"],
-        leadingUnderscore: 'allow',
+        leadingUnderscore: "allow",
       },
       {
         selector: "variable",
         // Need to allow PascalCase for React components
         format: ["PascalCase", "camelCase", "UPPER_CASE"],
-        leadingUnderscore: 'allow',
+        leadingUnderscore: "allow",
       },
       {
         selector: "parameter",
         format: ["camelCase"],
-        leadingUnderscore: 'allow',
+        leadingUnderscore: "allow",
       },
       {
         selector: "property",
         format: null,
-        leadingUnderscore: 'allow',
+        leadingUnderscore: "allow",
       },
       {
         selector: "typeLike",
@@ -248,6 +265,7 @@ module.exports = {
         ],
       },
     ],
+    "filename-rules/match": [2, { ".ts": "camelcase", ".tsx": "pascalcase" }],
     "padding-line-between-statements": "off",
     "@typescript-eslint/no-shadow": "off",
     "@typescript-eslint/quotes": "off",

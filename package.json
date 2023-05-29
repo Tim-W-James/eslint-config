@@ -31,6 +31,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-filename-rules": "^1.3.1",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prefer-arrow-functions": "^3.1.4",
@@ -52,6 +53,7 @@
     "eslint-config-airbnb": ">= 19",
     "eslint-config-airbnb-typescript": ">= 17",
     "eslint-config-prettier": ">= 8",
+    "eslint-plugin-filename-rules": ">= 1",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-jsx-a11y": ">= 6",
     "eslint-plugin-prefer-arrow-functions": ">= 3",
@@ -65,5 +67,6 @@
     "prettier": ">= 2",
     "prettier-plugin-packagejson": ">= 2",
     "typescript": ">= 4"
-  }
+  },
+  "dependencies": {}
 }
