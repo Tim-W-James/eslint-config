@@ -131,6 +131,7 @@ module.exports = {
     "require-unicode-regexp": "error",
     "@typescript-eslint/restrict-template-expressions": "error",
     "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "react/button-has-type": "error",
     "react/no-children-prop": "error",
     "react/no-danger-with-children": "error",
@@ -138,6 +139,7 @@ module.exports = {
     "react/jsx-fragments": "error",
     "react/destructuring-assignment": [
       "error",
+      "always",
       { destructureInSignature: "always" },
     ],
     "simple-import-sort/imports": "warn",
