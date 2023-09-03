@@ -48,3 +48,4 @@ Add to your `eslint` config:
 - sonarjs
 - jsx-ally
 - import
+- jsdoc
