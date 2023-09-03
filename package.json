@@ -1,6 +1,6 @@
 {
   "name": "@tim-w-james/eslint-config",
-  "version": "1.6.2",
+  "version": "2.0.1",
   "description": "Opinionated ESLint rule set for React and TypeScript",
   "keywords": [
     "eslint",
@@ -55,8 +55,8 @@
     "eslint-config-airbnb-typescript": ">= 17",
     "eslint-config-prettier": ">= 8",
     "eslint-plugin-filename-rules": ">= 1",
-    "eslint-plugin-jsdoc": ">= 46",
     "eslint-plugin-import": ">= 2",
+    "eslint-plugin-jsdoc": ">= 46",
     "eslint-plugin-jsx-a11y": ">= 6",
     "eslint-plugin-prefer-arrow-functions": ">= 3",
     "eslint-plugin-prettier": ">= 4",
