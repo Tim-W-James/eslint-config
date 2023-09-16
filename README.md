@@ -41,7 +41,6 @@ Add to your `eslint` config:
 - typescript
 - prettier
 - tsdoc
-- storybook
 
 ## Extends
 

@@ -37,7 +37,6 @@ module.exports = {
     "plugin:sonarjs/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
-    "plugin:storybook/recommended",
     "plugin:jsdoc/recommended-typescript",
   ],
   // Ignore files in root
