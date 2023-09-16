@@ -24,6 +24,7 @@ module.exports = {
     "simple-import-sort",
     "filename-rules",
     "jsdoc",
+    "eslint-plugin-tsdoc",
   ],
   extends: [
     "eslint:recommended",
@@ -171,6 +172,19 @@ module.exports = {
         allowTernary: true,
       },
     ],
+    "@typescript-eslint/no-floating-promises": [
+      "error",
+      { ignoreVoid: true, ignoreIIFE: true },
+    ],
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        checksVoidReturn: {
+          arguments: false,
+          attributes: false,
+        },
+      },
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": "warn",
     "@typescript-eslint/no-unnecessary-condition": "warn",
     "@typescript-eslint/no-unused-vars": [
@@ -241,7 +255,11 @@ module.exports = {
 
     "react/prefer-stateless-function": "error",
     "react/button-has-type": "error",
+    "react/no-unused-prop-types": "error",
+    "react/jsx-pascal-case": "error",
+    "react/jsx-no-script-url": "error",
     "react/no-children-prop": "error",
+    "react/no-danger": "error",
     "react/no-danger-with-children": "error",
     "react/no-unstable-nested-components": ["error", { allowAsProps: true }],
     "react/jsx-fragments": "error",
@@ -251,15 +269,30 @@ module.exports = {
       { destructureInSignature: "always" },
     ],
     "react/jsx-no-leaked-render": ["error", { validStrategies: ["ternary"] }],
+    "react/jsx-max-depth": ["error", { max: 5 }],
+    "react/function-component-definition": [
+      "warn",
+      { namedComponents: "arrow-function" },
+    ],
+    "react/jsx-key": [
+      "error",
+      {
+        checkFragmentShorthand: true,
+        checkKeyMustBeforeSpread: true,
+        warnOnDuplicates: true,
+      },
+    ],
     "react/jsx-no-useless-fragment": "warn",
     "react/jsx-curly-brace-presence": "warn",
+    "react/no-typos": "warn",
     "react/display-name": "warn",
     "react/self-closing-comp": "warn",
     "react/jsx-sort-props": "warn",
-    "react-refresh/only-export-components": "warn",
     "react/react-in-jsx-scope": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/prop-types": "off",
+
+    "react-refresh/only-export-components": "warn",
 
     "import/no-extraneous-dependencies": [
       "error",
@@ -267,6 +300,7 @@ module.exports = {
       { devDependencies: ["**/*.{test,spec,story,stories}.{ts,tsx}"] },
     ],
     "import/no-default-export": "error",
+
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
 
@@ -275,7 +309,6 @@ module.exports = {
     "jsdoc/no-blank-blocks": "warn",
     "jsdoc/require-asterisk-prefix": "warn",
     "jsdoc/require-description": "warn",
-    "jsdoc/require-hyphen-before-param-description": ["warn", "never"],
     "jsdoc/sort-tags": "warn",
     "jsdoc/check-syntax": "warn",
     "jsdoc/tag-lines": ["warn", "never", { startLines: 1 }],
@@ -301,7 +334,11 @@ module.exports = {
         enableFixer: true,
       },
     ],
+    // tsdoc checks this syntax instead
+    "jsdoc/require-hyphen-before-param-description": "off",
     "jsdoc/require-returns": "off",
+
+    "tsdoc/syntax": "warn",
 
     "prefer-arrow-functions/prefer-arrow-functions": [
       "warn",

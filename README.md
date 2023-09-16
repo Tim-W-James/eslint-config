@@ -40,6 +40,7 @@ Add to your `eslint` config:
 - react
 - typescript
 - prettier
+- tsdoc
 - storybook
 
 ## Extends
@@ -48,4 +49,3 @@ Add to your `eslint` config:
 - sonarjs
 - jsx-ally
 - import
-- jsdoc
