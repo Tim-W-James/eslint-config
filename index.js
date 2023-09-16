@@ -362,12 +362,16 @@ module.exports = {
     {
       // overrides for tests
       files: ["*.test.{ts,tsx}"],
+      rules: {
+        "@typescript-eslint/no-floating-promises": "off",
+      },
     },
     {
       // override for storybook
       files: ["*.{stories,story}.{ts,tsx}"],
       rules: {
         "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/no-floating-promises": "off",
         "import/no-default-export": "off",
         "jsdoc/require-jsdoc": "off",
       },
