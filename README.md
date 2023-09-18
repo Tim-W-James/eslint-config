@@ -3,6 +3,8 @@
 Opinionated ESLint rule set for React and TypeScript. Emphasis on auto-fixable
 rules that encourage consistency, safety and readability across your code base.
 
+Read [this](https://timjames.dev/blog/the-best-eslint-rules-for-react-projects-30i8) blog post describing my general approach.
+
 ## Install
 
 ### `npm`
