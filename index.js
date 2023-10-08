@@ -260,7 +260,6 @@ module.exports = {
 
     "react/prefer-stateless-function": "error",
     "react/button-has-type": "error",
-    "react/no-unused-prop-types": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-no-script-url": "error",
     "react/no-children-prop": "error",
