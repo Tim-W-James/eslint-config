@@ -12,6 +12,7 @@ module.exports = {
   },
   env: {
     browser: true,
+    "jest/globals": true,
   },
   plugins: [
     "react",
@@ -25,6 +26,8 @@ module.exports = {
     "filename-rules",
     "jsdoc",
     "eslint-plugin-tsdoc",
+    "no-secrets",
+    "jest",
   ],
   extends: [
     "eslint:recommended",
@@ -38,6 +41,8 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "plugin:jsdoc/recommended-typescript",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
   ],
   // Ignore files in root
   ignorePatterns: ["/*.*"],
@@ -103,6 +108,7 @@ module.exports = {
   rules: {
     "no-alert": "error",
     "require-unicode-regexp": "error",
+    "no-template-curly-in-string": "error",
     "prefer-template": "warn",
     "no-implicit-coercion": "warn",
     "require-await": "warn",
@@ -356,6 +362,8 @@ module.exports = {
     ],
 
     "filename-rules/match": [2, { ".ts": "camelcase", ".tsx": "pascalcase" }],
+
+    "no-secrets/no-secrets": "error",
   },
   overrides: [
     {
