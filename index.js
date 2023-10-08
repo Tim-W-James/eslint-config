@@ -363,7 +363,10 @@ module.exports = {
 
     "filename-rules/match": [2, { ".ts": "camelcase", ".tsx": "pascalcase" }],
 
-    "no-secrets/no-secrets": "error",
+    "no-secrets/no-secrets": [
+      "error",
+      { ignoreContent: "https", tolerance: 4.2 },
+    ],
   },
   overrides: [
     {

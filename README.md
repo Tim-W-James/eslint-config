@@ -39,7 +39,7 @@ npm install --dev @tim-w-james/eslint-config \
 ### `yarn`
 
 ```sh
-yarn add --dev @tim-w-james/eslint-config \
+yarn add -D @tim-w-james/eslint-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
   eslint \
@@ -68,7 +68,7 @@ yarn add --dev @tim-w-james/eslint-config \
 ### `pnpm`
 
 ```sh
-pnpm add --dev @tim-w-james/eslint-config \
+pnpm add -D @tim-w-james/eslint-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
   eslint \
@@ -106,9 +106,10 @@ Once installed, bump the minimum versions to the latest/desired versions.
 
 Add to your `eslint` config:
 
-```js
+```diff
 {
-  "extends": "@tim-w-james"
++  "extends": ["@tim-w-james"]
+  ...
 }
 ```
 
