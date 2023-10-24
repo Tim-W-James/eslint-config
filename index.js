@@ -105,6 +105,7 @@ module.exports = {
       },
     ],
   },
+  reportUnusedDisableDirectives: true,
   rules: {
     "no-alert": "error",
     "require-unicode-regexp": "error",
