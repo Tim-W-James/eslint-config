@@ -176,6 +176,7 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTernary: true,
+        enforceForJSX: true,
       },
     ],
     "@typescript-eslint/no-floating-promises": [
@@ -233,7 +234,8 @@ module.exports = {
       },
       {
         selector: "parameter",
-        format: ["camelCase"],
+        // Need to allow PascalCase for React components
+        format: ["camelCase", "PascalCase"],
         leadingUnderscore: "allow",
       },
       {
@@ -244,6 +246,11 @@ module.exports = {
       {
         selector: "typeLike",
         format: ["PascalCase"],
+      },
+      {
+        // Ignore convention for 3rd party libraries
+        selector: "import",
+        format: null,
       },
     ],
     "@typescript-eslint/no-restricted-imports": [
@@ -333,11 +340,17 @@ module.exports = {
         contexts: [
           "VariableDeclaration",
           "TSTypeAliasDeclaration",
+          "TSMethodSignature",
+          "TSInterfaceDeclaration",
           // Encourage documenting React prop types
           "TSPropertySignature",
         ],
         enableFixer: true,
       },
+    ],
+    "jsdoc/check-tag-names": [
+      "warn",
+      { definedTags: ["remarks", "privateRemarks"] },
     ],
     // tsdoc checks this syntax instead
     "jsdoc/require-hyphen-before-param-description": "off",
