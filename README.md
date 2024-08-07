@@ -10,7 +10,7 @@ Read [this](https://timjames.dev/blog/the-best-eslint-rules-for-react-projects-3
 ### `npm`
 
 ```sh
-npm install --dev @tim-w-james/eslint-config \
+npm install -D @tim-w-james/eslint-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
   eslint \
