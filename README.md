@@ -5,6 +5,10 @@ rules that encourage consistency, safety and readability across your code base.
 
 Read [this](https://timjames.dev/blog/the-best-eslint-rules-for-react-projects-30i8) blog post describing my general approach.
 
+Note that ESLint is in the midst of a major upgrade to version 9, which brings with it significant changes to the configuration syntax. The AirBnB configuration - among other related tools - does not yet support v9. For now, all our documentation and approach refers to the 'legacy' ESLint syntax. Therefore, when using this config, make sure to stick with: 
+* ESLint 8
+* TSESLint 7 (/parser and /eslint-plugin)
+
 ## Install
 
 ### `npm`
