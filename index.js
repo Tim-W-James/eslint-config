@@ -104,6 +104,9 @@ module.exports = {
         linkAttribute: "to",
       },
     ],
+    jest: {
+      version: "detect",
+    },
   },
   reportUnusedDisableDirectives: true,
   rules: {
@@ -355,6 +358,8 @@ module.exports = {
     // tsdoc checks this syntax instead
     "jsdoc/require-hyphen-before-param-description": "off",
     "jsdoc/require-returns": "off",
+    "jsdoc/require-returns-check": "off",
+    "jsdoc/check-param-names": ["error", { checkDestructured: false }],
 
     "tsdoc/syntax": "warn",
 

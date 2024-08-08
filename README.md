@@ -7,8 +7,8 @@ Read [this](https://timjames.dev/blog/the-best-eslint-rules-for-react-projects-3
 
 Note that ESLint is in the midst of a major upgrade to version 9, which brings with it significant changes to the configuration syntax. The AirBnB configuration - among other related tools - does not yet support v9. For now, all our documentation and approach refers to the 'legacy' ESLint syntax. Therefore, when using this config, make sure to stick with:
 
-* ESLint 8
-* TSESLint 7 (install @typescript-eslint/parser and @typescript-eslint/eslint-plugin, per the guide on [Legacy ESLint Setup](https://typescript-eslint.io/getting-started/legacy-eslint-setup) )
+- ESLint 8
+- TSESLint 7 (install @typescript-eslint/parser and @typescript-eslint/eslint-plugin, per the guide on [Legacy ESLint Setup](https://typescript-eslint.io/getting-started/legacy-eslint-setup) )
 
 ## Install
 
@@ -16,8 +16,8 @@ Note that ESLint is in the midst of a major upgrade to version 9, which brings w
 
 ```sh
 npm install -D @tim-w-james/eslint-config \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
+  @typescript-eslint/eslint-plugin@7 \
+  @typescript-eslint/parser@7 \
   eslint@8 \
   eslint-config-airbnb \
   eslint-config-airbnb-typescript \
@@ -34,7 +34,7 @@ npm install -D @tim-w-james/eslint-config \
   eslint-plugin-react-hooks \
   eslint-plugin-react-refresh \
   eslint-plugin-simple-import-sort \
-  eslint-plugin-sonarjs \
+  eslint-plugin-sonarjs@^0.25.1 \
   eslint-plugin-tsdoc \
   prettier \
   prettier-plugin-packagejson \
@@ -45,8 +45,8 @@ npm install -D @tim-w-james/eslint-config \
 
 ```sh
 yarn add -D @tim-w-james/eslint-config \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
+  @typescript-eslint/eslint-plugin@7 \
+  @typescript-eslint/parser@7 \
   eslint@8 \
   eslint-config-airbnb \
   eslint-config-airbnb-typescript \
@@ -63,7 +63,7 @@ yarn add -D @tim-w-james/eslint-config \
   eslint-plugin-react-hooks \
   eslint-plugin-react-refresh \
   eslint-plugin-simple-import-sort \
-  eslint-plugin-sonarjs \
+  eslint-plugin-sonarjs@^0.25.1 \
   eslint-plugin-tsdoc \
   prettier \
   prettier-plugin-packagejson \
@@ -74,8 +74,8 @@ yarn add -D @tim-w-james/eslint-config \
 
 ```sh
 pnpm add -D @tim-w-james/eslint-config \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
+  @typescript-eslint/eslint-plugin@7 \
+  @typescript-eslint/parser@7 \
   eslint@8 \
   eslint-config-airbnb \
   eslint-config-airbnb-typescript \
@@ -92,7 +92,7 @@ pnpm add -D @tim-w-james/eslint-config \
   eslint-plugin-react-hooks \
   eslint-plugin-react-refresh \
   eslint-plugin-simple-import-sort \
-  eslint-plugin-sonarjs \
+  eslint-plugin-sonarjs@^0.25.1 \
   eslint-plugin-tsdoc \
   prettier \
   prettier-plugin-packagejson \
@@ -109,13 +109,25 @@ Once installed, bump the minimum versions to the latest/desired versions.
 
 ## Usage
 
-Add to your `eslint` config:
+Add to your `eslintrc` config (for ESLint version 8):
 
 ```diff
-{
-+  "extends": ["@tim-w-james"]
+module.exports = {
++  parser: "@typescript-eslint/parser",
+  parserOptions: {
++    project: "./tsconfig.json",
++    ecmaVersion: 2018,
++    sourceType: "module",
++    tsconfigRootDir: __dirname,
+  },
+  extends: [
++  "@tim-w-james",
   ...
-}
+  ],
+  rules: {
+    ...
+  }
+};
 ```
 
 ## Ecosystem
