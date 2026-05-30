@@ -1,5 +1,7 @@
 # ESLint Config React TypeScript
 
+> **Note:** due to recent changes in the eco-system, we have now switched to [Biome JS](https://biomejs.dev/). Please find my re-implementation of this config in Biome here: <https://www.npmjs.com/package/@tim-w-james/biome-config>
+
 Opinionated ESLint rule set for React and TypeScript. Emphasis on auto-fixable
 rules that encourage consistency, safety and readability across your code base.
 

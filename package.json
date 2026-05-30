@@ -1,6 +1,6 @@
 {
   "name": "@tim-w-james/eslint-config",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "description": "Opinionated ESLint rule set for React and TypeScript",
   "keywords": [
     "eslint",
@@ -9,7 +9,7 @@
     "typescript",
     "storybook",
     "prettier",
-    "jsx-ally",
+    "jsx-a11y",
     "airbnb",
     "sonarjs"
   ],
